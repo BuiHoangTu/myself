@@ -178,6 +178,18 @@ section {
   color: #6e8efb;
 }
 
+.phone a {
+  display: block;         /* forces each phone number to a new line */
+  margin-left: 97px;      /* aligns numbers with text after the icon+label */
+  color: #2c3e50;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.phone a:hover {
+  color: #6e8efb;
+}
+
 .social-links {
   display: flex;
   justify-content: center;
