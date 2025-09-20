@@ -136,6 +136,65 @@ section {
     left: 25%;
 }
 
+.section-title p {
+    font-size: 1.1rem;
+    color: #7f8c8d;
+}
+
+.contact-info {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  margin-top: 2rem;
+  text-align: left;
+  max-width: 500px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.contact-info p {
+  font-size: 1.1rem;
+  color: #2c3e50;
+}
+
+.contact-info i {
+  color: #6e8efb;
+  margin-right: 8px;
+}
+
+.contact-info span {
+  font-weight: 500;
+  color: #7f8c8d;
+  margin-right: 5px;
+}
+
+.contact-info a {
+  color: #2c3e50;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.contact-info a:hover {
+  color: #6e8efb;
+}
+
+.social-links {
+  display: flex;
+  justify-content: center;
+  gap: 25px;
+  margin-top: 40px;
+}
+
+.social-link {
+  font-size: 1.6rem;
+  color: #6e8efb;
+  transition: color 0.3s;
+}
+
+.social-link:hover {
+  color: #a777e3;
+}
+
 /* About Section */
 #about {
     background-color: white;
