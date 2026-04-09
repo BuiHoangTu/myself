@@ -5,6 +5,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Bui Hoang Tu - Software Developer</title>
+    <meta name="description"
+        content="AI Engineer portfolio of Bui Hoang Tu - Machine Learning, Data Science, and Software Engineering projects">
+
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 
@@ -21,6 +24,7 @@
                         <li><a href="#home">Home</a></li>
                         <li><a href="#about">About</a></li>
                         <li><a href="#projects">Projects</a></li>
+                        <li><a href="#experience">Experience</a></li>
                         <li><a href="#contact">Contact</a></li>
                     </ul>
                 </nav>
@@ -31,10 +35,12 @@
     <!-- Hero Section -->
     <section id="home" class="hero">
         <div class="hero-content">
-            <h1>AI Specialist & Software Engineer</h1>
-            <p>Data Scientist and ML Engineer with expertise in building scalable, data-driven systems and applying
-                statistical modeling to solve complex problems</p>
+            <h1>I build scalable AI systems that turn data into real-world impact</h1>
+            <p>AI Engineer specializing in machine learning, time-series analysis, and distributed systems. I design and
+                deploy production-ready ML pipelines and high-performance backend services.</p>
             <a href="#projects" class="btn">View My Work</a>
+            <a href="#contact" class="btn">Contact Me</a>
+            <a href="/cv-jinja/cv.pdf" class="btn">My CV</a>
         </div>
     </section>
 
@@ -45,18 +51,22 @@
                 <h2>About Me</h2>
             </div>
             <div class="about-content">
-                <p>Data Scientist and ML Engineer with a Master's in AI/ML and a background in software engineering.
-                    Proven ability to apply statistical modeling, machine learning, and data analysis to build scalable,
-                    data-driven systems. Skilled at translating technical insights into business value and collaborating
-                    with cross-functional teams to deliver impactful solutions.</p>
+                <p>
+                    AI Engineer with a strong foundation in machine learning and software engineering. I specialize in
+                    building scalable ML systems, from anomaly detection in industrial time-series data to reinforcement
+                    learning agents. I focus on turning complex data into practical, high-impact solutions and deploying
+                    them in real-world environments.
+                </p>
 
                 <div class="skills">
                     <h3>Technical Skills</h3>
                     <ul>
-                        <li><strong>AI/ML:</strong> Python, Pandas, NumPy, Scikit-learn, PyTorch, TensorFlow</li>
-                        <li><strong>Data Engineering:</strong> SQL, BigQuery, PySpark, Data Analysis</li>
-                        <li><strong>Backend Development:</strong> Java, Spring Boot, Microservices, Kafka</li>
-                        <li><strong>Tools & Platforms:</strong> AWS, Docker, Kubernetes, Git</li>
+                        <li><strong>Languages:</strong> Python, Java, C, SQL</li>
+                        <li><strong>ML / AI:</strong> PyTorch, TensorFlow, Scikit-learn, NLP, Reinforcement Learning
+                        </li>
+                        <li><strong>Data Engineering:</strong> BigQuery, PySpark, Data Analysis</li>
+                        <li><strong>Backend:</strong> Spring Boot, Microservices, Kafka</li>
+                        <li><strong>Cloud & Tools:</strong> AWS, Docker, Kubernetes, Git</li>
                     </ul>
                 </div>
             </div>
@@ -72,9 +82,10 @@
             <div class="projects-grid">
                 <div class="project-card">
                     <h3>Wind turbine normal behavior monitoring - Time-Series Anomaly Detection</h3>
-                    <p>Designed an unsupervised learning model for anomaly detection on time-series data to identify
-                        abnormal wind turbine behavior.</p>
-                    <p>Designed and implemented a CI/CD pipeline for model deployment and monitoring on AWS.</p>
+                    <p>Built an unsupervised time-series anomaly detection model using autoencoders to detect abnormal
+                        wind turbine behavior.</p>
+                    <p><strong>Impact:</strong> Improved anomaly detection reliability and reduced noise in monitoring
+                        systems.</p>
                     <p><a href="https://buihoangtu.github.io/ul.bds.NormalBehaviorMonitor/"> See more </a></p>
                     <span class="tech-tag">Python</span>
                     <span class="tech-tag">Torch</span>
@@ -84,11 +95,12 @@
                 </div>
                 <div class="project-card">
                     <h3>Hybrid MobileNetV3: Impact of Activation Tuning and Feature Extractions</h3>
-                    <p>Explored MobileNetV3 architecture for satellite image classification on the EuroSAT-RGB dataset.
-                    </p>
-                    <p>Implemented hybrid feature fusion combining Sobel, HOG, and CNN-based features, and evaluated
-                        various activation functions (GELU, ELU, LeakyReLU, Hard ELU).</p>
-                    <p><a href="https://buihoangtu.github.io/ul.cs6428-deep-reinforcement/#-project-1-mobilenetv3">See more</a></p>
+                    <p>Optimized MobileNetV3 for satellite image classification using hybrid feature extraction (HOG +
+                        CNN).</p>
+                    <p><strong>Impact:</strong> Improved classification performance through feature fusion and
+                        activation tuning.</p>
+                    <p><a href="https://buihoangtu.github.io/ul.cs6428-deep-reinforcement/#-project-1-mobilenetv3">See
+                            more</a></p>
                     <span class="tech-tag">Python</span>
                     <span class="tech-tag">PyTorch</span>
                     <span class="tech-tag">CNN</span>
@@ -96,11 +108,12 @@
 
                 <div class="project-card">
                     <h3>Deep Q-Learning and Double DQN for Atari Breakout</h3>
-                    <p>Developed reinforcement learning agents using Deep Q-Networks (DQN) and Double DQN for Atari
-                        Breakout gameplay.</p>
-                    <p>Enhanced performance with Huber loss, hyperparameter optimization, and prioritized experience
-                        replay.</p>
-                    <p><a href="https://buihoangtu.github.io/ul.cs6428-deep-reinforcement/#-project-2-deep-q-learning-on-atari-breakout">See more</a></p>
+                    <p>Developed Deep Q-Network (DQN) and Double DQN agents for Atari Breakout.</p>
+                    <p><strong>Impact:</strong> Increased training stability and performance using prioritized replay
+                        and Huber loss.</p>
+                    <p><a
+                            href="https://buihoangtu.github.io/ul.cs6428-deep-reinforcement/#-project-2-deep-q-learning-on-atari-breakout">See
+                            more</a></p>
                     <span class="tech-tag">Python</span>
                     <span class="tech-tag">PyTorch</span>
                     <span class="tech-tag">Gymnasium</span>
@@ -110,20 +123,39 @@
 
                 <div class="project-card">
                     <h3>AI-Powered Full Text Search</h3>
-                    <p>Designed and implemented ranking logic and API integration for an AI-based microservice that
-                        improved query performance by 60%.</p>
+                    <p>Designed and implemented ranking logic and API integration for an AI-based microservice.</p>
+                    <p><strong>Impact:</strong> Improved search query performance by 60%.</p>
                     <span class="tech-tag">NLP</span>
                     <span class="tech-tag">Python</span>
                     <span class="tech-tag">ML</span>
                 </div>
                 <div class="project-card">
                     <h3>Real-Time Fleet Tracking System</h3>
-                    <p>Developed Java microservices for a system processing real-time telemetry data with Apache Kafka
-                        for scalable data pipelines.</p>
+                    <p>Developed Java microservices for a system processing real-time telemetry data with Apache Kafka.
+                    </p>
+                    <p><strong>Impact:</strong> Enabled real-time processing of high-volume telemetry data streams.</p>
                     <span class="tech-tag">Java</span>
                     <span class="tech-tag">Kafka</span>
                     <span class="tech-tag">Kubernetes</span>
                 </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience">
+        <div class="container">
+            <div class="section-title">
+                <h2>Experience</h2>
+            </div>
+
+            <div class="about-content">
+                <p><strong>AI / Software Engineer</strong></p>
+                <ul>
+                    <li>Designed and deployed machine learning pipelines for real-world applications</li>
+                    <li>Built scalable backend systems using Java, Spring Boot, and microservices</li>
+                    <li>Worked with real-time data streaming using Kafka</li>
+                </ul>
             </div>
         </div>
     </section>
@@ -136,18 +168,20 @@
             </div>
 
             <div class="contact-info">
+                <p><strong>Looking for an AI/ML engineer? Let's talk.</strong></p>
+
                 <p>
                     <i class="fas fa-envelope"></i>
                     <span>Email:</span>
-                    <a href="mailto:tubh1508@gmail.com">tubh1508@gmail.com</a>
+                    <a href="mailto:bhtu.work@gmail.com">bhtu.work@gmail.com</a>
                 </p>
 
-                <p class="phone">
+                <!-- <p class="phone">
                     <i class="fas fa-phone"></i>
                     <span>Phone:</span><br>
                     <a href="tel:+353892758446">+353 89 275 8446</a>
                     <a href="tel:+84913913505">+84 913 913 505</a>
-                </p>
+                </p> -->
 
 
                 <!-- <p>
@@ -170,7 +204,7 @@
     <!-- Footer -->
     <footer>
         <div class="container">
-            <p>&copy; 2024 Bui Hoang Tu. All rights reserved.</p>
+            <p>&copy; 2026 Bui Hoang Tu. All rights reserved.</p>
         </div>
     </footer>
 
@@ -182,6 +216,7 @@
 
                 const targetId = this.getAttribute('href');
                 const targetElement = document.querySelector(targetId);
+                if (!targetElement) return;
 
                 window.scrollTo({
                     top: targetElement.offsetTop - 80,
