@@ -24,6 +24,7 @@
                         <li><a href="#home">Home</a></li>
                         <li><a href="#about">About</a></li>
                         <li><a href="#projects">Projects</a></li>
+                        <li><a href="#events">Events</a></li>
                         <li><a href="#experience">Experience</a></li>
                         <li><a href="#contact">Contact</a></li>
                     </ul>
@@ -142,6 +143,95 @@
         </div>
     </section>
 
+    <!-- Events Section -->
+    <section id="events">
+        <div class="container">
+            <div class="section-title">
+                <h2>Events</h2>
+            </div>
+
+            <div class="carousel-wrapper">
+
+                <div class="carousel">
+                    <button class="carousel-btn prev" onclick="moveCarousel(-1)">&#8249;</button>
+
+                    <div class="carousel-track-wrapper">
+                        <div class="carousel-track">
+
+                            <!-- Event 1: ICAART -->
+                            <div class="carousel-slide">
+                                <div class="event-image">
+                                    <img src="/assets/events/Certificate-ICAART2026.png" alt="ICAART 2026"
+                                        onerror="this.parentElement.style.background='#1a1a2e'">
+                                </div>
+                                <div class="event-desc">
+                                    <span class="event-tag">Conference · Presenter</span>
+                                    <h3>ICAART 2026</h3>
+                                    <p>Malaga, Spain · February 2026</p>
+                                    <p>Presented paper <a href="http://doi.org/10.5220/0014229200004052"
+                                            target="_blank">On
+                                            the Capacity of Deep Autoencoder-Based Normal Behaviour Models in Wind
+                                            Turbine
+                                            Condition Monitoring</a> at the International Conference on Agents and
+                                        Artificial Intelligence.</p>
+                                    <div class="event-links">
+                                        <a href="http://doi.org/10.5220/0014229200004052" target="_blank"><i
+                                                class="fas fa-external-link-alt"></i> DOI</a>
+                                        <!-- <a href="/assets/events/icaart-cert.pdf" target="_blank"><i
+                                            class="fas fa-certificate"></i> Certificate</a> -->
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Event 2: AI for Ireland Quest -->
+                            <div class="carousel-slide">
+                                <div class="event-image">
+                                    <img src="/assets/events/ai-ireland-quest.jpg" alt="AI for Ireland Quest"
+                                        onerror="this.parentElement.style.background='#1a1a2e'">
+                                </div>
+                                <div class="event-desc">
+                                    <span class="event-tag">Organizer</span>
+                                    <h3>AI for Ireland Quest</h3>
+                                    <p>Ireland</p>
+                                    <p>Served as an organizer for AI for Ireland Quest, coordinating participants and
+                                        activities for this AI-focused event in Ireland.</p>
+                                    <div class="event-links">
+                                        <a href="#"><i class="fas fa-globe"></i> Learn More</a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Event 3: Placeholder -->
+                            <div class="carousel-slide">
+                                <div class="event-image"
+                                    style="background:#1a1a2e; display:flex; align-items:center; justify-content:center;">
+                                    <i class="fas fa-calendar-alt" style="font-size:4rem; color:#555;"></i>
+                                </div>
+                                <div class="event-desc">
+                                    <span class="event-tag">Coming Soon</span>
+                                    <h3>Upcoming Event</h3>
+                                    <p>Details to be announced</p>
+                                    <p>Stay tuned for more updates on upcoming conferences, talks, and events.</p>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <button class="carousel-btn next" onclick="moveCarousel(1)">&#8250;</button>
+                </div>
+            </div>
+
+            <!-- Dots -->
+            <div class="carousel-dots">
+                <span class="dot active" onclick="goToSlide(0)"></span>
+                <span class="dot" onclick="goToSlide(1)"></span>
+                <span class="dot" onclick="goToSlide(2)"></span>
+            </div>
+
+        </div>
+    </section>
+
     <!-- Experience Section -->
     <section id="experience">
         <div class="container">
@@ -224,6 +314,53 @@
                 });
             });
         });
+
+        // Carousel functionality
+        let currentSlide = 0;
+        const totalSlides = document.querySelectorAll('.carousel-slide').length;
+
+        function moveCarousel(dir) {
+            currentSlide = (currentSlide + dir + totalSlides) % totalSlides;
+            updateCarousel();
+        }
+
+        function goToSlide(index) {
+            currentSlide = index;
+            updateCarousel();
+        }
+
+        function updateCarousel() {
+            document.querySelector('.carousel-track').style.transform = `translateX(-${currentSlide * 100}%)`;
+            document.querySelectorAll('.dot').forEach((dot, i) => {
+                dot.classList.toggle('active', i === currentSlide);
+            });
+        }
+
+        let autoplayTimer = null;
+        let resumeTimer = null;
+
+        function startAutoplay() {
+            clearInterval(autoplayTimer);
+            autoplayTimer = setInterval(() => moveCarousel(1), 4000);
+        }
+
+        function pauseAutoplay(resumeDelay = 8000) {
+            clearInterval(autoplayTimer);
+            clearTimeout(resumeTimer);
+            resumeTimer = setTimeout(startAutoplay, resumeDelay);
+        }
+
+        // Start on load
+        startAutoplay();
+
+        // Hover: pause, resume after 8s of no interaction
+        document.querySelector('.carousel-wrapper').addEventListener('mouseenter', () => pauseAutoplay(8000));
+
+        // Manual nav: longer pause (12s) since user is clearly engaged
+        document.querySelectorAll('.carousel-btn, .dot').forEach(el => {
+            el.addEventListener('click', () => pauseAutoplay(12000));
+        });
+
     </script>
 </body>
 
