@@ -222,84 +222,84 @@ section {
 
 /* ===== PROJECT CARD ===== */
 .project-card {
-  background: white;
-  border-radius: 12px;
-  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.04);
-  padding: 2rem;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.04);
+    padding: 2rem;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .project-card:hover {
-  transform: translateY(-6px);
-  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
+    transform: translateY(-6px);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
 }
 
 .project-card img {
-  width: 100%;
-  border-radius: 10px;
-  margin-bottom: 1.5rem;
+    width: 100%;
+    border-radius: 10px;
+    margin-bottom: 1.5rem;
 }
 
 .project-card h3 {
-  font-size: 1.4rem;
-  color: #111;
-  margin-bottom: 0.5rem;
+    font-size: 1.4rem;
+    color: #111;
+    margin-bottom: 0.5rem;
 }
 
 .project-card p {
-  font-size: 1rem;
-  color: #555;
-  margin-bottom: 1.5rem;
-  line-height: 1.5;
+    font-size: 1rem;
+    color: #555;
+    margin-bottom: 1.5rem;
+    line-height: 1.5;
 }
 
 /* ===== TECH TAGS ===== */
 .tech-tags {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 0.5rem;
-  margin-bottom: 1.5rem;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    margin-bottom: 1.5rem;
 }
 
 .tech-tag {
-  background: #f3f4f6;
-  color: #374151;
-  font-size: 0.85rem;
-  font-weight: 500;
-  padding: 0.35rem 0.75rem;
-  border-radius: 20px;
-  transition: background 0.3s, color 0.3s;
+    background: #f3f4f6;
+    color: #374151;
+    font-size: 0.85rem;
+    font-weight: 500;
+    padding: 0.35rem 0.75rem;
+    border-radius: 20px;
+    transition: background 0.3s, color 0.3s;
 }
 
 .tech-tag:hover {
-  background: #e0e7ff;
-  color: #1e40af;
+    background: #e0e7ff;
+    color: #1e40af;
 }
 
 /* ===== PROJECT LINKS ===== */
 .project-links {
-  display: flex;
-  gap: 1rem;
-  margin-top: auto;
+    display: flex;
+    gap: 1rem;
+    margin-top: auto;
 }
 
 .project-link {
-  display: inline-flex;
-  align-items: center;
-  gap: 0.4rem;
-  color: #3b82f6;
-  font-weight: 500;
-  text-decoration: none;
-  transition: color 0.3s, transform 0.3s;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.4rem;
+    color: #3b82f6;
+    font-weight: 500;
+    text-decoration: none;
+    transition: color 0.3s, transform 0.3s;
 }
 
 .project-link:hover {
-  color: #2563eb;
-  transform: translateY(-2px);
+    color: #2563eb;
+    transform: translateY(-2px);
 }
 
 .project-link i {
-  font-size: 1.1rem;
+    font-size: 1.1rem;
 }
 
 
