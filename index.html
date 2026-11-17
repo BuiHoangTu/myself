@@ -162,7 +162,7 @@
                             <div class="carousel-slide">
                                 <div class="event-image">
                                     <img src="assets/events/Certificate-ICAART2026.png" alt="ICAART 2026"
-                                        onerror="this.src='assets/no-image.png'">
+                                        onerror="imgFallback(this)">
                                 </div>
                                 <div class="event-desc">
                                     <span class="event-tag">Conference · Presenter</span>
@@ -187,7 +187,7 @@
                             <div class="carousel-slide">
                                 <div class="event-image">
                                     <img src="assets/events/ai-ireland-quest.jpg" alt="AI for Ireland Quest"
-                                        onerror="this.src='assets/no-image.png'">
+                                        onerror="imgFallback(this)">
                                 </div>
                                 <div class="event-desc">
                                     <span class="event-tag">Organizer · Mentor</span>
@@ -360,6 +360,25 @@
     </footer>
 
     <script>
+        // Multi-level image fallback:
+        // 1st error  → try custom fallback (assets/no-image.png)
+        // 2nd error  → embed a generic SVG placeholder (can never fail)
+        const FALLBACK_IMG = 'assets/no-image.png';
+        const GENERIC_SVG = "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='200'%3E" +
+            "%3Crect width='300' height='200' fill='%23ddd'/%3E" +
+            "%3Ctext x='50%25' y='50%25' dominant-baseline='middle' text-anchor='middle' fill='%23999' font-size='16'%3ENo Image%3C/text%3E%3C/svg%3E";
+
+        function imgFallback(img) {
+            if (img.src.endsWith(FALLBACK_IMG)) {
+                // Custom fallback also failed → use inline SVG (final level)
+                img.onerror = null;
+                img.src = GENERIC_SVG;
+            } else {
+                // First failure → try custom fallback image
+                img.src = FALLBACK_IMG;
+            }
+        }
+
         // Simple smooth scrolling for navigation links
         document.querySelectorAll('nav a').forEach(anchor => {
             anchor.addEventListener('click', function (e) {
