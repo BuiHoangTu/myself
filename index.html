@@ -93,18 +93,41 @@
             </div>
             <div class="projects-grid">
                 <div class="project-card">
-                    <h3>Wind turbine normal behavior monitoring - Time-Series Anomaly Detection</h3>
-                    <p>Built an unsupervised time-series anomaly detection model using autoencoders to detect abnormal
-                        wind turbine behavior.</p>
-                    <p><strong>Impact:</strong> Improved anomaly detection reliability and reduced noise in monitoring
-                        systems.</p>
-                    <p><a href="https://buihoangtu.github.io/ul.bds.NormalBehaviorMonitor/"> See more </a></p>
+                    <h3>Multi-Agent Landscaping Decision Support</h3>
+                    <p>4-agent LangGraph architecture (Legal + Land Status → Planner → Verifier) with a reflection
+                        loop that re-queries specialist agents when plan quality scores below threshold.
+                        RAG pipeline with query expansion, parent-document retrieval, and cross-encoder reranking.</p>
+                    <p><strong>Evaluation:</strong> 230 real satellite images × 10 user profiles (2,183 scenarios).</p>
+                    <span class="tech-tag">LangGraph</span>
+                    <span class="tech-tag">RAG</span>
+                    <span class="tech-tag">Multi-Agent</span>
                     <span class="tech-tag">Python</span>
-                    <span class="tech-tag">Torch</span>
-                    <span class="tech-tag">AWS</span>
-                    <span class="tech-tag">ML</span>
-                    <span class="tech-tag">Autoencoder</span>
                 </div>
+
+                <div class="project-card">
+                    <h3>Irish-Language LLM Benchmark Leaderboard</h3>
+                    <p>Partnered with Údarás na Gaeltachta to benchmark frontier LLMs on math, QA, and legal tasks
+                        in Irish. Found that newer models don't automatically outperform on low-resource languages.</p>
+                    <p><strong>Key finding:</strong> Gemini family ranked highest overall.</p>
+                    <span class="tech-tag">LLM Evaluation</span>
+                    <span class="tech-tag">NLP</span>
+                    <span class="tech-tag">Low-Resource Languages</span>
+                </div>
+
+                <div class="project-card">
+                    <h3>Wind Turbine Anomaly Detection</h3>
+                    <p>Unsupervised CNN autoencoder for multi-channel SCADA data — 3 years of 10-min telemetry with
+                        regression imputation, spike filtering, and sine-cosine cyclical encoding.
+                        MLOps via AWS SageMaker: rolling 2-hour inference with drift-triggered retraining.</p>
+                    <p><a href="https://doi.org/10.5220/0014229200004052" target="_blank">ICAART 2026 Paper</a>
+                        · <a href="https://buihoangtu.github.io/ul.bds.NormalBehaviorMonitor/">See more</a></p>
+                    <span class="tech-tag">Python</span>
+                    <span class="tech-tag">PyTorch</span>
+                    <span class="tech-tag">AWS SageMaker</span>
+                    <span class="tech-tag">Autoencoder</span>
+                    <span class="tech-tag">MLOps</span>
+                </div>
+
                 <div class="project-card">
                     <h3>Hybrid MobileNetV3: Impact of Activation Tuning and Feature Extractions</h3>
                     <p>Optimized MobileNetV3 for satellite image classification using hybrid feature extraction (HOG +
@@ -134,21 +157,26 @@
                 </div>
 
                 <div class="project-card">
-                    <h3>AI-Powered Full Text Search</h3>
-                    <p>Designed and implemented ranking logic and API integration for an AI-based microservice.</p>
-                    <p><strong>Impact:</strong> Improved search query performance by 60%.</p>
+                    <h3>Real-Time IoT Fleet Tracking</h3>
+                    <p>Tracked 13,000+ vehicles, warehouses, and ships. Normalized heterogeneous telemetry with
+                        RabbitMQ sticky partitioning (per-asset FIFO), deduplication, heartbeat/self-healing,
+                        and PostgreSQL historical playback APIs.</p>
+                    <p><strong>Impact:</strong> Reduced manual reporting time by <strong>40%</strong>.</p>
+                    <span class="tech-tag">Java</span>
+                    <span class="tech-tag">RabbitMQ</span>
+                    <span class="tech-tag">PostgreSQL</span>
+                    <span class="tech-tag">Kubernetes</span>
+                </div>
+
+                <div class="project-card">
+                    <h3>Semantic Search (10M+ documents)</h3>
+                    <p>Introduced language-embedding semantic search over an Elasticsearch full-text + dictionary
+                        expansion baseline.</p>
+                    <p><strong>Impact:</strong> Top-10 accuracy improved from <strong>72% → 83%</strong>.</p>
                     <span class="tech-tag">NLP</span>
+                    <span class="tech-tag">Elasticsearch</span>
                     <span class="tech-tag">Python</span>
                     <span class="tech-tag">ML</span>
-                </div>
-                <div class="project-card">
-                    <h3>Real-Time Fleet Tracking System</h3>
-                    <p>Developed Java microservices for a system processing real-time telemetry data with Apache Kafka.
-                    </p>
-                    <p><strong>Impact:</strong> Enabled real-time processing of high-volume telemetry data streams.</p>
-                    <span class="tech-tag">Java</span>
-                    <span class="tech-tag">Kafka</span>
-                    <span class="tech-tag">Kubernetes</span>
                 </div>
             </div>
         </div>
@@ -269,13 +297,26 @@
                     <div class="timeline-content">
                         <h3>Software Engineer</h3>
                         <h4>Viettel High Tech</h4>
+
+                        <h5>Real-Time IoT Tracking &amp; Reporting (13,000+ vehicles, warehouses, ships)</h5>
                         <ul>
-                            <li>Developed scalable backend and microservices (Java, Spring Boot, Docker, Kubernetes)
-                            </li>
-                            <li>Built AI-powered search features using NLP, improving search efficiency by
-                                <strong>60%</strong></li>
-                            <li>Automated data pipelines, saving <strong>7.5+ hours/day</strong></li>
-                            <li>Delivered reporting workflows reducing <strong>150+ staff hours/month</strong></li>
+                            <li>Normalized heterogeneous telemetry, implemented RabbitMQ sticky partitioning
+                                (strict per-asset FIFO), deduplication, and heartbeat/self-healing</li>
+                            <li>Built PostgreSQL historical playback APIs with staleness flagging and trend
+                                analysis, reducing manual reporting time by <strong>40%</strong></li>
+                        </ul>
+
+                        <h5>Semantic Search (10M+ documents)</h5>
+                        <ul>
+                            <li>Introduced language-embedding semantic search over existing Elasticsearch
+                                full-text + dictionary expansion baseline</li>
+                            <li>Improved top-10 accuracy from <strong>72% → 83%</strong></li>
+                        </ul>
+
+                        <h5>Horizontal Scaling via Ceph</h5>
+                        <ul>
+                            <li>Identified that local file paths forced single-instance deployment; migrated to
+                                Ceph distributed object storage to enable multi-worker horizontal scaling</li>
                         </ul>
                     </div>
                 </div>
@@ -289,11 +330,18 @@
                     <div class="timeline-content">
                         <h3>Research Intern</h3>
                         <h4>University of Limerick</h4>
+
+                        <h5>MSc Thesis (EnergyPro-funded) — Wind Turbine Anomaly Detection</h5>
                         <ul>
-                            <li>Led time-series anomaly detection research for wind turbine monitoring</li>
-                            <li>Developed deep learning models for normal behavior modeling</li>
+                            <li>Designed unsupervised CNN autoencoder for multi-channel SCADA data — chosen due
+                                to severe class imbalance and need to detect unseen faults (CNNs outperformed
+                                LSTMs in literature)</li>
+                            <li>Preprocessed 3 years of 10-minute telemetry: time-based regression imputation for
+                                dropouts, physical spike filtering, sine-cosine cyclical encoding</li>
+                            <li>Built MLOps pipeline: ROC-AUC &amp; F1 benchmarking, AWS SageMaker rolling
+                                2-hour real-time inference API with drift-triggered retraining</li>
                             <li>
-                                Presented research at ICAART 2026:
+                                Published at ICAART 2026:
                                 <a href="https://doi.org/10.5220/0014229200004052" target="_blank">
                                     View Paper (DOI)
                                 </a>
@@ -311,9 +359,27 @@
                     <div class="timeline-content">
                         <h3>Research Assistant</h3>
                         <h4>University College Cork</h4>
+
+                        <h5>Multi-Agent Landscaping Decision Support (PoC)</h5>
                         <ul>
-                            <li>Researched multilingual alignment for low-resource languages</li>
-                            <li>Designed experiments improving cross-lingual generalization</li>
+                            <li>Built a 4-agent LangGraph system (Legal → Land Status → Planner → Verifier) so
+                                small/medium landscaping projects can get constraint-aware plans without expensive
+                                consultants</li>
+                            <li>Implemented a reflection loop: Verifier scores criteria and loops back through
+                                Legal &amp; Land Status if average &lt; 4/5, up to N iterations</li>
+                            <li>Designed RAG pipeline with intent-to-regulation query expansion, parent-document
+                                retrieval, and cross-encoder reranking; structured JSON output with offline document
+                                links verified by Verifier (N' retry loops)</li>
+                            <li>Evaluated on <strong>230 real satellite images × 10 user profiles</strong>
+                                (2,183 applicable scenarios)</li>
+                        </ul>
+
+                        <h5>Irish-Language LLM Benchmark Leaderboard</h5>
+                        <ul>
+                            <li>Partnered with Údarás na Gaeltachta to evaluate frontier models across math, QA,
+                                and legal tasks in Irish</li>
+                            <li>Key finding: newer frontier models didn't automatically outperform on low-resource
+                                Irish; <strong>Gemini family ranked highest</strong> overall</li>
                         </ul>
                     </div>
                 </div>
