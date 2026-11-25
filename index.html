@@ -22,10 +22,10 @@
                 <nav>
                     <ul>
                         <li><a href="#home">Home</a></li>
-                        <li><a href="#about">About</a></li>
+                        <li><a href="#events">Highlights</a></li>
                         <li><a href="#projects">Projects</a></li>
-                        <li><a href="#events">Events</a></li>
                         <li><a href="#experience">Experience</a></li>
+                        <li><a href="#about">Skills</a></li>
                         <li><a href="#contact">Contact</a></li>
                     </ul>
                 </nav>
@@ -36,148 +36,13 @@
     <!-- Hero Section -->
     <section id="home" class="hero">
         <div class="hero-content">
-            <h1>I build scalable AI systems that turn data into real-world impact</h1>
-            <p>AI Engineer specializing in machine learning, time-series analysis, and distributed systems. I design and
-                deploy production-ready ML pipelines and high-performance backend services.</p>
-            <a href="#projects" class="btn">View My Work</a>
-            <a href="#contact" class="btn">Contact Me</a>
-            <a href="/cv-jinja/cv.pdf" class="btn">My CV</a>
-        </div>
-    </section>
-
-    <!-- About Section -->
-    <section id="about">
-        <div class="container">
-            <div class="section-title">
-                <h2>About Me</h2>
-            </div>
-            <div class="about-content">
-                <p>
-                    AI Engineer with a strong foundation in machine learning and software engineering. I specialize in
-                    building scalable ML systems, from anomaly detection in industrial time-series data to reinforcement
-                    learning agents. I focus on turning complex data into practical, high-impact solutions and deploying
-                    them in real-world environments.
-                </p>
-
-                <div class="skills">
-                    <h3>Technical Skills</h3>
-                    <ul>
-                        <li><strong>Languages:</strong> Python, Java, C, SQL</li>
-                        <li><strong>ML / AI:</strong> PyTorch, TensorFlow, Scikit-learn, NLP, Reinforcement Learning
-                        </li>
-                        <li><strong>Data Engineering:</strong> BigQuery, PySpark, Data Analysis</li>
-                        <li><strong>Backend:</strong> Spring Boot, Microservices, Kafka</li>
-                        <li><strong>Cloud & Tools:</strong> AWS, Docker, Kubernetes, Git</li>
-                    </ul>
-                </div>
-
-                <div class="certifications">
-                    <h3>Certifications</h3>
-                    <ul>
-                        <li><a href="https://www.credly.com/badges/17d8fadf-cef3-4957-a339-66ebca65b08a/public_url" target="_blank">AWS Academy Cloud Foundations</a></li>
-                        <li><a href="https://www.credly.com/badges/9d980c93-a0d8-4b0c-9a1a-81db599cbbed/public_url" target="_blank">AWS Academy Machine Learning Foundations</a></li>
-                        <li><a href="https://www.credly.com/badges/38a38d82-400f-453f-a78b-250b21287217/public_url" target="_blank">IBM Cybersecurity Fundamentals</a></li>
-                        <li><a href="https://api.accredible.com/v1/auth/invite?code=41e263692476bf9bfdcd&credential_id=b2537340-b43c-4c6a-929a-12de7d6e355b&url=https%3A%2F%2Fedu.google.accredible.com%2Fb2537340-b43c-4c6a-929a-12de7d6e355b&ident=e5d7c803-74c8-407f-b1e2-7681d2b15354" target="_blank">Google Certified Educator</a></li>
-                        <li><a href="https://api.accredible.com/v1/auth/invite?code=d6736f58007a55b4dbdd&credential_id=a547f88e-369e-4780-8110-c424586cbc8e&url=https%3A%2F%2Fedu.google.accredible.com%2Fa547f88e-369e-4780-8110-c424586cbc8e&ident=e5d7c803-74c8-407f-b1e2-7681d2b15354" target="_blank">Gemini Certified Educator</a></li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Projects Section -->
-    <section id="projects">
-        <div class="container">
-            <div class="section-title">
-                <h2>My Projects</h2>
-            </div>
-            <div class="projects-grid">
-                <div class="project-card">
-                    <h3>Multi-Agent Landscaping Decision Support</h3>
-                    <p>4-agent LangGraph architecture (Legal + Land Status → Planner → Verifier) with a reflection
-                        loop that re-queries specialist agents when plan quality scores below threshold.
-                        RAG pipeline with query expansion, parent-document retrieval, and cross-encoder reranking.</p>
-                    <p><strong>Evaluation:</strong> 230 real satellite images × 10 user profiles (2,183 scenarios).</p>
-                    <span class="tech-tag">LangGraph</span>
-                    <span class="tech-tag">RAG</span>
-                    <span class="tech-tag">Multi-Agent</span>
-                    <span class="tech-tag">Python</span>
-                </div>
-
-                <div class="project-card">
-                    <h3>Irish-Language LLM Benchmark Leaderboard</h3>
-                    <p>Partnered with Údarás na Gaeltachta to benchmark frontier LLMs on math, QA, and legal tasks
-                        in Irish. Found that newer models don't automatically outperform on low-resource languages.</p>
-                    <p><strong>Key finding:</strong> Gemini family ranked highest overall.</p>
-                    <span class="tech-tag">LLM Evaluation</span>
-                    <span class="tech-tag">NLP</span>
-                    <span class="tech-tag">Low-Resource Languages</span>
-                </div>
-
-                <div class="project-card">
-                    <h3>Wind Turbine Anomaly Detection</h3>
-                    <p>Unsupervised CNN autoencoder for multi-channel SCADA data — 3 years of 10-min telemetry with
-                        regression imputation, spike filtering, and sine-cosine cyclical encoding.
-                        MLOps via AWS SageMaker: rolling 2-hour inference with drift-triggered retraining.</p>
-                    <p><a href="https://doi.org/10.5220/0014229200004052" target="_blank">ICAART 2026 Paper</a>
-                        · <a href="https://buihoangtu.github.io/ul.bds.NormalBehaviorMonitor/">See more</a></p>
-                    <span class="tech-tag">Python</span>
-                    <span class="tech-tag">PyTorch</span>
-                    <span class="tech-tag">AWS SageMaker</span>
-                    <span class="tech-tag">Autoencoder</span>
-                    <span class="tech-tag">MLOps</span>
-                </div>
-
-                <div class="project-card">
-                    <h3>Hybrid MobileNetV3: Impact of Activation Tuning and Feature Extractions</h3>
-                    <p>Optimized MobileNetV3 for satellite image classification using hybrid feature extraction (HOG +
-                        CNN).</p>
-                    <p><strong>Impact:</strong> Improved classification performance through feature fusion and
-                        activation tuning.</p>
-                    <p><a href="https://buihoangtu.github.io/ul.cs6428-deep-reinforcement/#-project-1-mobilenetv3">See
-                            more</a></p>
-                    <span class="tech-tag">Python</span>
-                    <span class="tech-tag">PyTorch</span>
-                    <span class="tech-tag">CNN</span>
-                </div>
-
-                <div class="project-card">
-                    <h3>Deep Q-Learning and Double DQN for Atari Breakout</h3>
-                    <p>Developed Deep Q-Network (DQN) and Double DQN agents for Atari Breakout.</p>
-                    <p><strong>Impact:</strong> Increased training stability and performance using prioritized replay
-                        and Huber loss.</p>
-                    <p><a
-                            href="https://buihoangtu.github.io/ul.cs6428-deep-reinforcement/#-project-2-deep-q-learning-on-atari-breakout">See
-                            more</a></p>
-                    <span class="tech-tag">Python</span>
-                    <span class="tech-tag">PyTorch</span>
-                    <span class="tech-tag">Gymnasium</span>
-                    <span class="tech-tag">Reinforcement Learning</span>
-                    <span class="tech-tag">DQN</span>
-                </div>
-
-                <div class="project-card">
-                    <h3>Real-Time IoT Fleet Tracking</h3>
-                    <p>Tracked 13,000+ vehicles, warehouses, and ships. Normalized heterogeneous telemetry with
-                        RabbitMQ sticky partitioning (per-asset FIFO), deduplication, heartbeat/self-healing,
-                        and PostgreSQL historical playback APIs.</p>
-                    <p><strong>Impact:</strong> Reduced manual reporting time by <strong>40%</strong>.</p>
-                    <span class="tech-tag">Java</span>
-                    <span class="tech-tag">RabbitMQ</span>
-                    <span class="tech-tag">PostgreSQL</span>
-                    <span class="tech-tag">Kubernetes</span>
-                </div>
-
-                <div class="project-card">
-                    <h3>Semantic Search (10M+ documents)</h3>
-                    <p>Introduced language-embedding semantic search over an Elasticsearch full-text + dictionary
-                        expansion baseline.</p>
-                    <p><strong>Impact:</strong> Top-10 accuracy improved from <strong>72% → 83%</strong>.</p>
-                    <span class="tech-tag">NLP</span>
-                    <span class="tech-tag">Elasticsearch</span>
-                    <span class="tech-tag">Python</span>
-                    <span class="tech-tag">ML</span>
-                </div>
+            <h1>Software Engineer &amp; AI Researcher</h1>
+            <p>2+ years of industry experience building scalable microservices and production AI integrations. Main focus
+                is on anomaly detection for industrial systems and trustworthy, grounded AI.</p>
+            <div class="hero-actions">
+                <a href="#events" class="btn">My Impact</a>
+                <a href="#contact" class="btn btn-outline">Contact Me</a>
+                <a href="/cv-jinja/cv.pdf" class="btn btn-outline">My CV</a>
             </div>
         </div>
     </section>
@@ -186,7 +51,7 @@
     <section id="events">
         <div class="container">
             <div class="section-title">
-                <h2>Events</h2>
+                <h2>Highlights &amp; Impact</h2>
             </div>
 
             <div class="carousel-wrapper">
@@ -248,17 +113,19 @@
                             </div>
 
 
-                            <!-- Event 3: Placeholder -->
+                            <!-- Event 3: Vietnam Overseas Expert Network -->
                             <div class="carousel-slide">
-                                <div class="event-image"
-                                    style="background:#1a1a2e; display:flex; align-items:center; justify-content:center;">
-                                    <i class="fas fa-calendar-alt" style="font-size:4rem; color:#555;"></i>
+                                <div class="event-image">
+                                    <img src="assets/events/expert-network.jpeg" alt="Vietnam Overseas Expert Network"
+                                        onerror="imgFallback(this)">
                                 </div>
                                 <div class="event-desc">
-                                    <span class="event-tag">Coming Soon</span>
-                                    <h3>Upcoming Event</h3>
-                                    <p>Details to be announced</p>
-                                    <p>Stay tuned for more updates on upcoming conferences, talks, and events.</p>
+                                    <span class="event-tag">Community · Expert Network</span>
+                                    <h3>Vietnam Overseas Expert Network</h3>
+                                    <p>Dublin, Ireland</p>
+                                    <p>Participated in the Vietnam Overseas Expert Network gathering in Ireland,
+                                        connecting Vietnamese researchers, engineers, and professionals across academia
+                                        and industry.</p>
                                 </div>
                             </div>
 
@@ -276,6 +143,121 @@
                 <span class="dot" onclick="goToSlide(2)"></span>
             </div>
 
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects">
+        <div class="container">
+            <div class="section-title">
+                <h2>My Projects</h2>
+            </div>
+            <div class="projects-carousel">
+                <button class="carousel-btn prev" onclick="scrollProjects(-1)" aria-label="Previous projects">&#8249;</button>
+                <div class="projects-grid" id="projects-track">
+                <div class="project-card">
+                    <h3>Wind Turbine Anomaly Detection</h3>
+                    <p>Unsupervised CNN autoencoder for multi-channel SCADA data — 3 years of 10-min telemetry with
+                        regression imputation, spike filtering, and sine-cosine cyclical encoding.
+                        MLOps via AWS SageMaker: rolling 2-hour inference with drift-triggered retraining.</p>
+                    <p><a href="https://doi.org/10.5220/0014229200004052" target="_blank">ICAART 2026 Paper</a>
+                        · <a href="https://buihoangtu.github.io/ul.bds.NormalBehaviorMonitor/">See more</a></p>
+                    <div class="tech-tags">
+                        <span class="tech-tag">Python</span>
+                        <span class="tech-tag">PyTorch</span>
+                        <span class="tech-tag">AWS SageMaker</span>
+                        <span class="tech-tag">Autoencoder</span>
+                        <span class="tech-tag">MLOps</span>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <h3>Multi-Agent Landscaping Decision Support</h3>
+                    <p>4-agent LangGraph architecture (Legal + Land Status → Planner → Verifier) with a reflection
+                        loop that re-queries specialist agents when plan quality scores below threshold.
+                        RAG pipeline with query expansion, parent-document retrieval, and cross-encoder reranking.</p>
+                    <p><strong>Evaluation:</strong> 230 real satellite images × 10 user profiles (2,183 scenarios).</p>
+                    <div class="tech-tags">
+                        <span class="tech-tag">LangGraph</span>
+                        <span class="tech-tag">RAG</span>
+                        <span class="tech-tag">Multi-Agent</span>
+                        <span class="tech-tag">Python</span>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <h3>Real-Time IoT Fleet Tracking</h3>
+                    <p>Tracked 13,000+ vehicles, warehouses, and ships. Normalized heterogeneous telemetry with
+                        RabbitMQ sticky partitioning (per-asset FIFO), deduplication, heartbeat/self-healing,
+                        and PostgreSQL historical playback APIs.</p>
+                    <p><strong>Impact:</strong> Reduced manual reporting time by <strong>40%</strong>.</p>
+                    <div class="tech-tags">
+                        <span class="tech-tag">Java</span>
+                        <span class="tech-tag">RabbitMQ</span>
+                        <span class="tech-tag">PostgreSQL</span>
+                        <span class="tech-tag">Kubernetes</span>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <h3>Semantic Search (10M+ documents)</h3>
+                    <p>Introduced language-embedding semantic search over an Elasticsearch full-text + dictionary
+                        expansion baseline.</p>
+                    <p><strong>Impact:</strong> Top-10 accuracy improved from <strong>72% → 83%</strong>.</p>
+                    <div class="tech-tags">
+                        <span class="tech-tag">NLP</span>
+                        <span class="tech-tag">Elasticsearch</span>
+                        <span class="tech-tag">Python</span>
+                        <span class="tech-tag">ML</span>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <h3>Irish-Language LLM Benchmark Leaderboard</h3>
+                    <p>Partnered with Údarás na Gaeltachta to benchmark frontier LLMs on math, QA, and legal tasks
+                        in Irish. Found that newer models don't automatically outperform on low-resource languages.</p>
+                    <p><strong>Key finding:</strong> Gemini family ranked highest overall.</p>
+                    <div class="tech-tags">
+                        <span class="tech-tag">LLM Evaluation</span>
+                        <span class="tech-tag">NLP</span>
+                        <span class="tech-tag">Low-Resource Languages</span>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <h3>Hybrid MobileNetV3: Impact of Activation Tuning and Feature Extractions</h3>
+                    <p>Optimized MobileNetV3 for satellite image classification using hybrid feature extraction (HOG +
+                        CNN).</p>
+                    <p><strong>Impact:</strong> Improved classification performance through feature fusion and
+                        activation tuning.</p>
+                    <p><a href="https://buihoangtu.github.io/ul.cs6428-deep-reinforcement/#-project-1-mobilenetv3">See
+                            more</a></p>
+                    <div class="tech-tags">
+                        <span class="tech-tag">Python</span>
+                        <span class="tech-tag">PyTorch</span>
+                        <span class="tech-tag">CNN</span>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <h3>Deep Q-Learning and Double DQN for Atari Breakout</h3>
+                    <p>Developed Deep Q-Network (DQN) and Double DQN agents for Atari Breakout.</p>
+                    <p><strong>Impact:</strong> Increased training stability and performance using prioritized replay
+                        and Huber loss.</p>
+                    <p><a
+                            href="https://buihoangtu.github.io/ul.cs6428-deep-reinforcement/#-project-2-deep-q-learning-on-atari-breakout">See
+                            more</a></p>
+                    <div class="tech-tags">
+                        <span class="tech-tag">Python</span>
+                        <span class="tech-tag">PyTorch</span>
+                        <span class="tech-tag">Gymnasium</span>
+                        <span class="tech-tag">Reinforcement Learning</span>
+                        <span class="tech-tag">DQN</span>
+                    </div>
+                </div>
+                </div>
+                <button class="carousel-btn next" onclick="scrollProjects(1)" aria-label="Next projects">&#8250;</button>
+            </div>
         </div>
     </section>
 
@@ -334,8 +316,7 @@
                         <h5>MSc Thesis (EnergyPro-funded) — Wind Turbine Anomaly Detection</h5>
                         <ul>
                             <li>Designed unsupervised CNN autoencoder for multi-channel SCADA data — chosen due
-                                to severe class imbalance and need to detect unseen faults (CNNs outperformed
-                                LSTMs in literature)</li>
+                                to severe class imbalance and need to detect unseen faults</li>
                             <li>Preprocessed 3 years of 10-minute telemetry: time-based regression imputation for
                                 dropouts, physical spike filtering, sine-cosine cyclical encoding</li>
                             <li>Built MLOps pipeline: ROC-AUC &amp; F1 benchmarking, AWS SageMaker rolling
@@ -343,7 +324,7 @@
                             <li>
                                 Published at ICAART 2026:
                                 <a href="https://doi.org/10.5220/0014229200004052" target="_blank">
-                                    View Paper (DOI)
+                                    View Paper
                                 </a>
                             </li>
                         </ul>
@@ -384,6 +365,39 @@
                     </div>
                 </div>
 
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about">
+        <div class="container">
+            <div class="section-title">
+                <h2>Skills &amp; Certifications</h2>
+            </div>
+            <div class="about-content">
+                <div class="skills">
+                    <ul>
+                        <li><strong>Languages:</strong> Python, Java, SQL, C</li>
+                        <li><strong>AI &amp; LLMs:</strong> LangGraph, RAG, Multi-Agent Systems, PyTorch, TensorFlow,
+                            Scikit-learn, NLP, Reinforcement Learning</li>
+                        <li><strong>Data &amp; Search:</strong> Elasticsearch, PostgreSQL, Time-Series / SCADA, PySpark,
+                            BigQuery</li>
+                        <li><strong>Backend &amp; Distributed:</strong> Spring Boot, RabbitMQ, Microservices, Ceph</li>
+                        <li><strong>Cloud &amp; MLOps:</strong> AWS, Docker, Kubernetes, Git</li>
+                    </ul>
+                </div>
+
+                <div class="certifications">
+                    <h3>Certifications</h3>
+                    <ul>
+                        <li><a href="https://www.credly.com/badges/17d8fadf-cef3-4957-a339-66ebca65b08a/public_url" target="_blank">AWS Academy Cloud Foundations</a></li>
+                        <li><a href="https://www.credly.com/badges/9d980c93-a0d8-4b0c-9a1a-81db599cbbed/public_url" target="_blank">AWS Academy Machine Learning Foundations</a></li>
+                        <li><a href="https://www.credly.com/badges/38a38d82-400f-453f-a78b-250b21287217/public_url" target="_blank">IBM Cybersecurity Fundamentals</a></li>
+                        <li><a href="https://api.accredible.com/v1/auth/invite?code=41e263692476bf9bfdcd&credential_id=b2537340-b43c-4c6a-929a-12de7d6e355b&url=https%3A%2F%2Fedu.google.accredible.com%2Fb2537340-b43c-4c6a-929a-12de7d6e355b&ident=e5d7c803-74c8-407f-b1e2-7681d2b15354" target="_blank">Google Certified Educator</a></li>
+                        <li><a href="https://api.accredible.com/v1/auth/invite?code=d6736f58007a55b4dbdd&credential_id=a547f88e-369e-4780-8110-c424586cbc8e&url=https%3A%2F%2Fedu.google.accredible.com%2Fa547f88e-369e-4780-8110-c424586cbc8e&ident=e5d7c803-74c8-407f-b1e2-7681d2b15354" target="_blank">Gemini Certified Educator</a></li>
+                    </ul>
+                </div>
             </div>
         </div>
     </section>
@@ -472,6 +486,14 @@
             });
         });
 
+        // Projects horizontal scroll
+        function scrollProjects(dir) {
+            const track = document.getElementById('projects-track');
+            const card = track && track.querySelector('.project-card');
+            if (!card) return;
+            track.scrollBy({ left: dir * (card.offsetWidth + 24), behavior: 'smooth' });
+        }
+
         // Carousel functionality
         let currentSlide = 0;
         const totalSlides = document.querySelectorAll('.carousel-slide').length;
@@ -517,6 +539,21 @@
         document.querySelectorAll('.carousel-btn, .dot').forEach(el => {
             el.addEventListener('click', () => pauseAutoplay(12000));
         });
+
+        // Scroll-spy: highlight active nav link
+        const navLinks = document.querySelectorAll('nav a');
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    const id = entry.target.getAttribute('id');
+                    navLinks.forEach(link => {
+                        link.classList.toggle('active', link.getAttribute('href') === `#${id}`);
+                    });
+                }
+            });
+        }, { rootMargin: '-40% 0px -55% 0px' });
+
+        document.querySelectorAll('section[id]').forEach(sec => observer.observe(sec));
 
     </script>
 </body>
